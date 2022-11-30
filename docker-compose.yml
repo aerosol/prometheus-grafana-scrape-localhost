@@ -7,8 +7,6 @@ volumes:
 services:
   prometheus:
     network_mode: host
-    extra_hosts:
-        - "host.docker.internal:host-gateway"
     image: prom/prometheus:latest
     container_name: prometheus
     volumes:
