@@ -25,7 +25,7 @@ services:
 
   grafana:
     network_mode: host
-    image: grafana/grafana-oss:9.2.7
+    image: grafana/grafana-oss:latest
     container_name: grafana
     volumes:
       - ./grafana/provisioning:/etc/grafana/provisioning
